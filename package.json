@@ -1,0 +1,29 @@
+{
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://BasirO.github.io/weather-App", 
+  "scripts": {
+    "build": "webpack --progress --mode=production",
+    "watch": "webpack --progress --watch",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "predeploy": "npm run build", 
+    "deploy": "gh-pages -d dist"  
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "css-loader": "^6.8.1",
+    "eslint": "^8.48.0",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}
+
